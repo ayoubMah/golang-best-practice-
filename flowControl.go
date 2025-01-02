@@ -119,7 +119,7 @@ func pow(x, n, lim float64) float64 {
 	}
 	return lim
 }
-
+// comming soon
 //func Sqrt(x float64) float64 {
 //	guess := 1.0
 //	var variable float64 = guess
