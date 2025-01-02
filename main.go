@@ -1,3 +1,8 @@
+// In this go code you gana learn GO HHHHH
+// just following me
+// or better go to     https://go.dev/tour
+// happy codding :)
+
 package main
 
 import (
@@ -58,11 +63,44 @@ func main() {
 		z      complex128 = cmplx.Sqrt(-5 + 12i)
 	)
 	fmt.Println(ToBe, MaxInt, z)
-	fmt.Printf("Type: , %T , value of , %v \n", ToBe)
-	fmt.Printf("Type: , %T , value of , %v \n", MaxInt)
-	fmt.Printf("Type: , %T , value of , %v \n", z)
+	fmt.Printf("Type:  %T , value of , %v \n", ToBe, ToBe)
+	fmt.Printf("Type:  %T , value of , %v \n", MaxInt, MaxInt)
+	fmt.Printf("Type:  %T , value of , %v \n", z, z)
+
+	// Zero  values  or default values,
+	var num int
+	var bol bool
+	var fl float64
+	var st string
+	fmt.Printf("%v %v %v %v \n", num, fl, st, bol) // why %q and not %v ??
+	// so yeah i understand why %q and not %v
+	// so %v give you the value and the %q it outputs the string enclosed in double quotes
+
+	// type Inferance
+	ayoub := 12 + 34i
+	fmt.Printf("The type is: %T of the value: %v \n", ayoub, ayoub)
+	// just change the value of ayoub and you'll get different type
+
+	//Constants:
+	// Constants cannot be declared using the := syntax . this is very important !!!!!!!!
+
+	const Pi = math.Pi
+	const World = "World"
+	fmt.Println(Pi)
+	fmt.Println(World)
+
+	// Numeric Constants
+	const (
+		Big   = 1 << 99
+		Small = Big >> 99
+	)
+	//fmt.Println(Big)
+	fmt.Println(calo(Small), "ssss", cala(Big))
 
 }
+
+func calo(x int) int         { return x + 1 }
+func cala(y float64) float64 { return y * 0.1 }
 
 // so let's define a function that calculates the some of 2 numbers
 // remember in GO the type came after the  variables and the functions
