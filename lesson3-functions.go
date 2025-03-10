@@ -68,10 +68,15 @@ func main() {
 		"Such a lovely place",
 		"Plenty of room at the Hotel California",
 	)
+	fmt.Println(calculate(12, 12))
 }
 
 func printCostReport(costCalculator func(string) int, message string) {
 	cost := costCalculator(message)
 	fmt.Printf(`Message: "%s" Cost: %v cents`, message, cost)
 	fmt.Println()
+}
+
+func calculate(a float64, b float64) float64 {
+	return a * b
 }
